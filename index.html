@@ -241,23 +241,27 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Walk the <span style="color: #cf7a0b;">PLANC</span>: <span style="color: #cf7a0b;">P</span>hysics‑Guided R<span style="color: #cf7a0b;">L</span> for <span style="color: #cf7a0b;">A</span>gile Humanoid Locomotio<span style="color: #cf7a0b;">N</span> on <span style="color: #cf7a0b;">C</span>onstrained Footholds </h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Min Dai</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">William D. Compton</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Junheng Li</a>,</span>
+                    <span class="author-block">
+                      <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Lizhi Yang</a>,</span>
+                      <span class="author-block">
+                        <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Aaron D. Ames</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
+                    <span class="author-block">California Institute of Technology<br>2025</span>
                     <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
@@ -321,11 +325,11 @@
       <!-- TODO: Replace with your teaser video -->
       <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
         <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
+        <source src="static/videos/hero.mp4" type="video/mp4">
       </video>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Walking over random stepping stone terrain with a humanoid robot using physics-guided reinforcement learning. 
       </h2>
     </div>
   </div>
@@ -341,7 +345,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Bipedal humanoid robots must precisely coordinate balance, timing, and contact decisions when locomoting on constrained footholds such as stepping stones, beams, and planks---even minor errors can lead to catastrophic failure. Classical optimization and control pipelines handle these constraints well but depend on highly accurate mathematical representations of terrain geometry, making them prone to error when perception is noisy or incomplete. Meanwhile, reinforcement learning has shown strong resilience to disturbances and modeling errors, yet end-to-end policies rarely discover the precise foothold placement and step sequencing required for discontinuous terrain. These contrasting limitations motivate approaches that guide learning with physics-based structure rather than relying purely on reward shaping. In this work, we introduce a locomotion framework in which a reduced-order stepping planner supplies dynamically consistent motion targets that steer the RL training process via Control Lyapunov Function (CLF) rewards. This combination of structured footstep planning and data-driven adaptation produces accurate, agile, and hardware-validated stepping-stone locomotion on a humanoid robot, substantially improving reliability compared to conventional model-free reinforcement-learning baselines.
           </p>
         </div>
       </div>
@@ -351,55 +355,12 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
 <!-- Youtube video -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3">Full Supplementary Video</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
@@ -414,32 +375,51 @@
 </section>
 <!-- End youtube video -->
 
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">System Architecture</h2>
+
+      <!-- TODO: Replace with your poster PDF -->
+      <img src="static/images/arch_diagram.png" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
 
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Video Gallery</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
+            <source src="static/videos/hardware.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
+            <source src="static/videos/baseline.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
             <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+            <source src="static/videos/long course.mp4" type="video/mp4">
+        <div class="item item-video4">
+          <!-- TODO: Add poster image for better preview -->
+          <video poster="" id="video4" controls muted loop height="100%" preload="metadata">
+            <!-- Your video file here -->
+            <source src="static/videos/push recovery.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -450,23 +430,6 @@
 
 
 
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 

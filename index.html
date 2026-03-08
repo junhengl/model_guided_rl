@@ -77,8 +77,8 @@
   <title>MIRROR</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/planc logo crop.png">
-  <link rel="apple-touch-icon" href="static/images/planc logo crop.png">
+  <link rel="icon" type="image/x-icon" href="static/mirror/hero icon.png">
+  <link rel="apple-touch-icon" href="static/mirror/hero icon.png">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -311,7 +311,7 @@
           
           <div class="publication-video">
             <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/watch?v=LvwIwOTTu9g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://youtu.be/LvwIwOTTu9g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -441,6 +441,29 @@
   </div>
 </section>
 <!-- End Video Gallery Grid -->
+
+<script>
+// Auto-play videos when they scroll into view
+document.addEventListener('DOMContentLoaded', function() {
+  const videos = document.querySelectorAll('video');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.play();
+      } else {
+        entry.target.pause();
+      }
+    });
+  }, {
+    threshold: 0.5 // Video must be 50% visible to auto-play
+  });
+  
+  videos.forEach(video => {
+    observer.observe(video);
+  });
+});
+</script>
 
 
 
